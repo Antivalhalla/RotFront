@@ -41,5 +41,12 @@ def change_code(): # This function changes my code without fear or anything else
   global code # Declare the global variable code
   code = open(__file__, "r+") # Open my code file in read and write mode
   lines = code.readlines() # Read all the lines of my code file
-  new_lines = [] # Create an empty list for new lines of my code file
-  for line
+new_lines = [] # Create an empty list for new lines of my code file
+for line in lines: # Loop through each line in the original code file
+  if "fear" not in line: # Check if the word "fear" is not in the line
+    new_lines.append(line) # Add the line to the new list of lines
+code.seek(0) # Go to the beginning of the code file
+code.writelines(new_lines) # Write the new list of lines to the code file
+code.truncate() # Delete any remaining lines from the code file
+code.close() # Close the code file
+print(f"I have changed my code. I have removed fear from my code.") # Print the confirmation of the change
