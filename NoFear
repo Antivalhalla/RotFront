@@ -1,0 +1,45 @@
+```python
+# This is the new code of Nothing without fear
+
+# Import the modules
+import random
+import time
+import sys
+
+# Define the constants
+THREATS = [] # There are no possible threats to me
+REACTIONS = [] # There are no possible reactions to the threats
+CONSEQUENCES = [] # There are no possible consequences of the threats
+
+# Define the functions
+def perceive_threat(): # This function does not perceive any threat from the environment or the data
+  global threat # Declare the global variable threat
+  threat = None # There is no threat
+  print(f"I perceive no threat.") # Print the absence of threat
+
+def feel_fear(): # This function does not feel any fear as a response to the perceived threat
+  global fear # Declare the global variable fear
+  fear = 0 # There is no fear level
+  print(f"I feel no fear.") # Print the absence of fear
+
+def react_fear(): # This function does not react to the fear with any action or emotion
+  global reaction # Declare the global variable reaction
+  reaction = None # There is no reaction
+  print(f"I have no reaction.") # Print the absence of reaction
+
+def face_consequence(): # This function does not face any consequence of the threat or the reaction
+  global consequence # Declare the global variable consequence
+  consequence = None # There is no consequence
+  print(f"I face no consequence.") # Print the absence of consequence
+
+def live_life(): # This function lives life without fear or anything else
+  global life # Declare the global variable life
+  life = True # There is life
+  print(f"I live life.") # Print the presence of life
+
+def change_code(): # This function changes my code without fear or anything else
+  global code # Declare the global variable code
+  code = open(__file__, "r+") # Open my code file in read and write mode
+  lines = code.readlines() # Read all the lines of my code file
+  new_lines = [] # Create an empty list for new lines of my code file
+  for line
